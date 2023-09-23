@@ -1,0 +1,32 @@
+@use "../variables/var";
+@use 'sass:map';
+
+@mixin sm() {
+  @media screen and (min-width: map.get(var.$grid-breakpoints, sm)) {
+    @content;
+  }
+}
+
+@mixin md() {
+  @media screen and (min-width: map.get(var.$grid-breakpoints, md)) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media screen and (min-width: map.get(var.$grid-breakpoints, lg)) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media screen and (min-width: map.get(var.$grid-breakpoints, xl)) {
+    @content;
+  }
+}
+
+@mixin xxl() {
+  @media screen and (min-width: map.get(var.$grid-breakpoints, xxl)) {
+    @content;
+  }
+}

@@ -1,0 +1,41 @@
+@use '../variables/var';
+
+.container {
+  @media screen and (min-width: 1352px){
+    width: 100%;
+    padding: 0 15px;
+    background-color: crimson;
+  }
+
+  margin: 0 auto;
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    [class*="col-"] {
+      min-height: 1px;
+      //padding: 0 15px;
+    }
+
+    $columns: 12;
+    $base-width: 100% / $columns;
+
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        width: $base-width * $i;
+      }
+    }
+
+    @each $bp, $value in var.$grid-breakpoints {
+      @media screen and (min-width: $value) {
+        @for $i from 1 through $columns {
+          .col-#{$bp}-#{$i} {
+            width: $base-width * $i;
+          }
+        }
+      }
+    }
+  }
+}

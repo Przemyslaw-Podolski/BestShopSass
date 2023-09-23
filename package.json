@@ -1,0 +1,17 @@
+{
+  "name": "bestshopsass",
+  "version": "2.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "rm -fr disc && parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  }
+}
