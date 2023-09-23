@@ -4,3 +4,12 @@
 @use "./modules/mixins";
 @use "./variables/colors";
 @use "./variables/var";
+
+
+//elements
+@use "./elements/header";
+@use "./elements/welcome";
+@use "./elements/statistics";
+@use "./elements/blocks";
+@use "./elements/pricing";
+@use "./elements/contact";

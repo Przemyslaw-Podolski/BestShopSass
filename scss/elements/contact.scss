@@ -1,0 +1,15 @@
+@use "../variables/colors";
+@use "../variables/var";
+@use "../modules/mixins";
+
+.contact__container{
+  width: 896px;
+  margin: 155px auto 60px;
+  display: flex;
+
+}
+
+.contact__info{
+  width: 455px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,95 @@
+@use "../variables/colors";
+@use "../variables/var";
+@use "../modules/mixins";
+
+.header {
+  height: 70px;
+  z-index: 4;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  padding: 0 15px;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .header__title{
+      font-family: var.$font-raleway;
+      font-weight: 300;
+      color: colors.$color-primary;
+    }
+  }
+
+  nav{
+    .header__hamburger{
+      color: colors.$color-primary;
+      @include mixins.md(){
+        display: none;
+      }
+    }
+    .hamburger__button{
+      display: none;
+      top: -9999px;
+      left: -9999px;
+
+    }
+    .header__menu{
+      background-color: colors.$color-white;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: var.$font-raleway;
+      color: colors.$color-grey;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 20px 0;
+      letter-spacing: 3px;
+      font-size: 0.7em;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+      z-index: 2;
+
+      .menu__link{
+        padding: 8px 15px;
+        &:hover{
+          color: colors.$color-black;
+        }
+      }
+
+      @include mixins.md(){
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        .menu__link{
+          padding: 0 15px;
+          &:last-child{
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .hamburger__button:checked ~ .header__menu {
+      display: none;
+    }
+
+    .hamburger__button:checked ~ .header__hamburger .header__close__btn {
+      display: none;
+    }
+
+    .header__hamburger .header__hamburger__btn {
+      display: none;
+    }
+
+    .hamburger__button:checked ~ .header__hamburger .header__hamburger__btn {
+      display: block;
+    }
+  }
+}
+
+
+

@@ -6,13 +6,243 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700|Raleway:200,300,400,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/index.574c7455.css">
 </head>
 <body>
-<div class="container">
-    <div class="siema">Dzień dobry</div>
-</div>
+    <div class="header">
+        <div class="header__container container">
+            <div class="header__title"><h1>BestShop</h1></div>
+            <nav>
+                <input class="hamburger__button" type="checkbox" id="trigger-menu">
+                <label class="header__hamburger" for="trigger-menu">
+                    <i class="header__hamburger__btn fa-solid fa-bars"></i>
+                    <i class="header__close__btn fa-solid fa-xmark"></i>
+                </label>
+
+                <div class="header__menu">
+                    <a href="#why-us" class="menu__link">Why us?</a>
+                    <a href="#benefits" class="menu__link">Benefits</a>
+                    <a href="#prices" class="menu__link">Prices</a>
+                    <a href="#contact" class="menu__link">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="welcome">
+        <div class="welcome__container container">
+            <h1>Sell More!</h1>
+            <p>Open shop on our platform and increase your sales</p>
+            <div class="button__container">
+                <button class="welcome__button">Open your shop</button>
+            </div>
+
+            <div class="welcome__background">
+                <img src="/Background.96fc9b9b.png" alt="laptop" class="background_image">
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics" id="why-us">
+        <div class="statistics__container container">
+            <h2 class="statistics__title">The most popular sales platform in country</h2>
+            <article class="statistics__article">
+                <div class="statistics__article__element">
+                    <div class="statistics__icon">
+                        <div class="statistics__icon__group">
+                            <div class="statistics__circle red__circle">
+                                <img class="icon__red" src="/Person.e8721018.svg" alt="Person" title="person">
+                            </div>
+                        </div>
+                        <h2>100000<span>+</span></h2>
+                        <p>daily entries</p>
+                    </div>
+                </div>
+
+                <div class="statistics__article__element">
+                    <div class="statistics__icon">
+                        <div class="statistics__icon__group">
+                            <div class="statistics__circle blue__circle">
+                                <img class="icon__blue" src="/Eye.e60e75e7.svg" alt="Eye" title="eye">
+                            </div>
+                        </div>
+                        <h2>200000<span>+</span></h2>
+                        <p>seen products<br>every day</p>
+                    </div>
+                </div>
+
+                <div class="statistics__article__element">
+                    <div class="statistics__icon">
+                        <div class="statistics__icon__group">
+                            <div class="statistics__circle green__circle">
+                                <img class="icon__green" src="/Catalog.8507218e.svg" alt="Catalog" title="catalog">
+                            </div>
+                        </div>
+                        <h2>10000<span>+</span></h2>
+                        <p>added posts<br> daily</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="blocks" id="benefits">
+        <article class="articles article1">
+            <div class="article__text">
+                <h2>Be always first</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="article__line red__line"></div>
+            </div>
+            <div class="article1__image">
+                <img src="/Macbook.a1f4b436.png" alt="Mackbook" height="219">
+            </div>
+        </article>
+        <article class="articles article2">
+            <div class="article2__image">
+                <img src="/iPhone.18df9ac3.png" alt="iPhone" height="302">
+            </div>
+            <div class="article2_text article__text">
+                <h2>Your shop is<br> where you are!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="article__line blue__line"></div>
+            </div>
+        </article>
+        <article class="articles article3">
+            <div class="article3_text article__text">
+                <h2>Increase recognition <br> your brand!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div class="article__line green__line"></div>
+            </div>
+            <div class="article3__image">
+                <img src="/Trumpet.041da3b3.png" alt="iPhone" height="207">
+            </div>
+        </article>
+    </section>
+
+    <section class="pricing" id="prices">
+        <h1 class="pricing__title">Pricing</h1>
+        <div class="pricing__container">
+            <article class="program program__red">
+                <h3>Basic</h3>
+                <h1 class="price price__red">$0</h1>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark-1">
+                    <p class="line__text">100 MB HDD</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">1 Subdomain</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">2 E-mails</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Close.22110c7d.svg" alt="Close">
+                    <p class="line__text">Two years license</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Close.22110c7d.svg" alt="Close">
+                    <p class="line__text">Full Support</p>
+                </div>
+                <div class="pricing__begin begin__red">
+                    <p>Begin</p>
+                </div>
+            </article>
+            <article class="program program__big program__blue">
+                <h3>Professional</h3>
+                <h1 class="price price__blue">$25</h1>
+                <p>Limited offer</p>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">500 MB HDD</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">2 Subdomains</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">5 E-mails</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="Close">
+                    <p class="line__text">One year license</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Close.22110c7d.svg" alt="Close">
+                    <p class="line__text">Full Support</p>
+                </div>
+                <div class="pricing__begin begin__blue">
+                    <p>Begin</p>
+                </div>
+            </article>
+            <article class="program program__green">
+                <h3>Premium</h3>
+                <h1 class="price price__green">$60</h1>
+                <p>Limited offer</p>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">2 GB HDD</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">2 Subdomains</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="checkmark">
+                    <p class="line__text">5 E-mails</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="Close">
+                    <p class="line__text">One year license</p>
+                </div>
+                <div class="price__line">
+                    <img src="/Checkmark-1.22a0eaf4.svg" alt="Close">
+                    <p class="line__text">Full Support</p>
+                </div>
+                <div class="pricing__begin begin__green">
+                    <p>Begin</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact__container">
+            <div class="contact__info">
+                <h2>Any questions?</h2>
+                <p>Leave your email address or call us!</p>
+                <div class="contact__info__data">
+                    <img src="/Mail%20Icon.b0bc1804.svg" alt="Mail Icon">
+                    <p>info@bestshop.com</p>
+                    <img src="/Phone%20Icon.b10af3a5.svg" alt="Phone Icon">
+                    <p>786 354 458</p>
+                </div>
+            </div>
+            <div class="contact__form">
+                <div class="form_name">
+                    <label for="name">Name<br></label>
+                    <input class=" form_element form__name" id="name" type="text">
+                </div>
+                <div class="form_email">
+                    <label for="email">Email<br></label>
+                    <input class="form_element form__email" id="email" type="email">
+                </div>
+                <div class="form__checkbox">
+                    <input type="checkbox" id="chk">
+                    <label class="form__checkbox__label" for="chk">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                </div>
+                <div class="form_button">
+                    <button>Send</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 <script src="/BestShopSass.3464ddca.js"></script></body>

@@ -1,0 +1,148 @@
+@use "../variables/colors";
+@use "../variables/var";
+@use "../modules/mixins";
+
+.pricing__title{
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.pricing__container{
+  margin: 0 auto 50px;
+  width: 1266px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program{
+  width: 372px;
+  height: 461px;
+  border: solid 1px;
+  border-radius: 18px;
+  text-align: center;
+  position: relative;
+  padding: 35px;
+}
+
+.program h3{
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.program .price{
+  font-family: var(--font-open-sans);
+  font-size: 46px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.program .price__red{
+  color: var(--color-redish);
+  margin-bottom: 70px;
+}
+
+.program .price__blue{
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.program .price__green{
+  color: var(--color-green);
+  margin-bottom: 20px;
+}
+.program p{
+  font-size: 12px;
+  font-style: var(--font-raleway);
+}
+
+.program__blue > p{
+  margin-bottom: 58px;
+}
+
+.program__green > p{
+  margin-bottom: 38px;
+}
+
+.program__big{
+  width: 405px;
+  height: 500px;
+  border-color: var(--color-primary);
+
+}
+.program__big:hover{
+  box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.program__red{
+  border-color: var(--color-redish);
+}
+
+.program__red:hover{
+  box-shadow: 5px 10px 27px rgba(251, 59, 100, 0.18);
+}
+
+.program__green{
+  border-color: var(--color-green);
+}
+
+.program__green:hover{
+  box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.25);
+}
+
+.price__line{
+  margin-bottom: 20px;
+}
+
+.program__big .price__line{
+  margin-bottom: 25px;
+}
+
+.price__line img{
+  display: inline;
+}
+
+.line__text{
+  display: inline-block;
+  max-width: 180px ;
+}
+
+.pricing__begin{
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+  font-size: 13px;
+  font-weight: 600;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-radius: 23px;
+  border-width: 1px;
+  border-color: inherit;
+}
+
+.begin__red{
+  background-color: var(--color-redish);
+}
+
+.begin__blue{
+  background-color: var(--color-primary);
+}
+
+.begin__green{
+  background-color: var(--color-green);
+}
+
+.pricing__begin p{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}

@@ -1,0 +1,80 @@
+@use "../variables/colors";
+@use "../variables/var";
+@use "../modules/mixins";
+
+
+.statistics{
+  background-color: colors.$color-white;
+
+  .statistics__title{
+    font-family: var.$font-raleway;
+    font-weight: 500;
+    text-align: center;
+    width: 230px;
+    margin: 2rem auto;
+    @include mixins.md(){
+      margin: 100px auto 70px auto;
+      width: auto;
+    }
+
+  }
+
+  .statistics__article{
+    text-align: center;
+    @include mixins.md(){
+      width: 823px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 121px;
+    }
+
+    .statistics__article__element{
+      margin-bottom: 3rem;
+    }
+  }
+
+  .statistics__icon img{
+    position: relative;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+  .statistics__icon .icon__blue{
+    left: 30%;
+  }
+
+  .statistics__icon h2{
+    font-family: var.$font-raleway;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 5.96px;
+  }
+
+  .statistics__icon p{
+    color: colors.$color-grey;
+    font-family: var.$font-raleway;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  .statistics__circle{
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    background-color: colors.$color-redish;
+    z-index: 0;
+    margin: 20px auto;
+  }
+
+  .blue__circle{
+    background-color: colors.$color-primary;
+  }
+
+  .green__circle{
+    background-color: colors.$color-green;
+  }
+}
+
