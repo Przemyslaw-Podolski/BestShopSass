@@ -201,9 +201,8 @@ template, [hidden] {
 
 @media screen and (width >= 1352px) {
   .container {
-    background-color: #dc143c;
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
   }
 }
 
@@ -516,14 +515,18 @@ template, [hidden] {
 
 .header {
   z-index: 4;
-  height: 70px;
+  background-color: #fff;
+  height: 165px;
   padding: 0 15px;
+  position: sticky;
+  top: 0;
   box-shadow: 0 3px 6px #00000029;
 }
 
 .header__container {
   justify-content: space-between;
   align-items: center;
+  max-width: 897px;
   height: 100%;
   display: flex;
 }
